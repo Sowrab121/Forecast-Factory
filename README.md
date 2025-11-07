@@ -145,15 +145,19 @@ The system is **modular and extensible**, enabling analysts to plug in new model
 ```
 forecastfactory/
 │
-├── app.py                   # Streamlit main interface
-├── io_sql.py                # SQL connection and read/write operations
-├── models.py                # Forecast model (Prophet & Baseline)
-├── scenario.py              # Scenario adjustments
-├── explain.py               # Explainability and narratives
-├── viz.py                   # Visualization setup (Plotly)
+├── app.py                   # Streamlit main interface         
 ├── db/
 │   ├── schema.sql           # Database schema
 │   └── seed.sql             # Sample data
+├── forecastfactory
+│   ├── __init__.py
+│   ├── elasticity.py
+│   ├── explain.py
+│   ├── features.py
+│   ├── io_sql.py
+│   ├── models.py 
+│   ├── scenario.py
+│   └── viz.py
 ├── config.yaml              # Configuration
 └── requirements.txt         # Dependencies
 
