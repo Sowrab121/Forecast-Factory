@@ -1,0 +1,3 @@
+database_url: "sqlite:///:memory:"
+kpi_name: "revenue"
+forecast_horizon_days: 90

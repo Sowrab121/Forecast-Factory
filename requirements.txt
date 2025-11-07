@@ -1,0 +1,12 @@
+streamlit
+pandas
+numpy
+sqlalchemy
+plotly
+scikit-learn
+xgboost
+shap
+pydantic
+pyyaml
+# prophet is optional; install if you want forecasts:
+# prophet
